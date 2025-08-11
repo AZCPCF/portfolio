@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import "cubes-ui/dist/index.css";
+@source "../node_modules/cubes-ui/dist/index.css";
+@theme {
+  --color-background: #282c33;
+  --color-foreground: #ffffff;
+  --color-primary-50: oklch(97% 0.035 318);
+  --color-primary-100: oklch(94% 0.055 318);
+  --color-primary-200: oklch(91% 0.075 318);
+  --color-primary-300: oklch(87% 0.1 318);
+  --color-primary-400: oklch(82% 0.12 318);
+  --color-primary-500: oklch(76% 0.135 318);
+  --color-primary-600: oklch(65% 0.12 318);
+  --color-primary-700: oklch(52% 0.1 318);
+  --color-primary-800: oklch(38% 0.075 318);
+  --color-primary-900: oklch(25% 0.05 318);
+}
+html {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+@font-face {
+  font-family: fira-code;
+  src: url(assets/fonts/FiraCode-Regular.ttf);
+}
+* {
+  font-family: fira-code;
+}
+body:has(.modal) {
+  overflow: hidden;
+}
