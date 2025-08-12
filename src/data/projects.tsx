@@ -9,7 +9,7 @@ export const projects = [
     description: "You're using it rn",
     buttons: {
       github: "https://github.com/AZCPCF/portfolio",
-      live: "https://github.com/AZCPCF/portfolio",
+      live: "https://portfolio-azcpcf-apps.vercel.app",
     },
   },
   {

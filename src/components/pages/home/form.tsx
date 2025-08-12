@@ -55,7 +55,7 @@ export default function HomeForm({ closeModal }: { closeModal: () => void }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="grid grid-cols-2 modal max-md:grid-cols-1 w-full gap-2 **:rounded-none **:ring-offset-primary-700"
+      className="grid grid-cols-2 modal max-md:grid-cols-1 w-full gap-2 **:!rounded-none **:ring-offset-primary-700"
     >
       <Typography variant="h2" className="col-span-full pb-3">
         Contact Me
@@ -106,7 +106,7 @@ export default function HomeForm({ closeModal }: { closeModal: () => void }) {
       <div className="col-span-full">
         <Input
           name="message"
-          className="pb-20"
+          className="!pb-20"
           placeholder="Message"
           value={fields.message}
           onChange={handleChange}

@@ -40,7 +40,7 @@ export default function HomeWhoAmI() {
             className="w-[400px] aspect-square max-lg:w-1/2 m-auto  max-lg:my-8 max-sm:w-full"
           />
           <div className="border border-gray-500 flex gap-2 items-center p-2">
-            <div className="bg-primary-main h-6 w-6"></div>
+            <div className="bg-primary-500 h-6 w-6"></div>
             <Typography variant="h5">
               <span className="text-gray-500">Currently working on</span>{" "}
               Cubes Router

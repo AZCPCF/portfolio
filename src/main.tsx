@@ -6,7 +6,7 @@ import { CubesProvider } from "cubes-ui";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <CubesProvider getToken={() => ""}>
+    <CubesProvider apiUrl="https://68993fb4fed141b96b9f0e3b.mockapi.io/api/" getToken={() => ""}>
       <App />
     </CubesProvider>
   </StrictMode>

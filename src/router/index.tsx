@@ -16,7 +16,7 @@ export const Router: FC<RouterProps> = ({ routes }) => {
     return () => {
       window.removeEventListener("popstate", onPopState);
     };
-  }, []);
+  }, [setCurrentPath]);
 
   const route = routes.find((r) => r.path === currentPath);
   const Component = route ? route.component : () => <h2>404 Not Found</h2>;

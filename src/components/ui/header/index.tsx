@@ -51,7 +51,7 @@ export default function Header() {
           </div>
         </nav>
       </div>
-      <nav className="flex gap-8 max-md:hidden">
+      <nav className="flex gap-8 max-md:!hidden">
         <HeaderLink closeHeader={closeHeader} title="home" />
         <HeaderLink closeHeader={closeHeader} title="works" />
         <HeaderLink closeHeader={closeHeader} title="about-me" />

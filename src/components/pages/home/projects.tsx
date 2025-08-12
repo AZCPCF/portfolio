@@ -12,7 +12,7 @@ export default function HomeProjects() {
         </Title>
         <ShowAll
           className="col-span-7 max-lg:col-span-6 max-md:col-span-5"
-          to="projects"
+          to="works"
         />
       </div>
       <div className="grid grid-cols-3 mt-8 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4">

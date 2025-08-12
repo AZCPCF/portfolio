@@ -29,3 +29,6 @@ html {
 body:has(.modal) {
   overflow: hidden;
 }
+dialog{
+  margin: 0;
+}
