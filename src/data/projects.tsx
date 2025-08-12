@@ -1,5 +1,6 @@
 import portfolio from "../assets/projects/portfolio.png";
 import cubesUi from "../assets/projects/cubes-ui.png";
+import smallOne from "../assets/projects/small-one.png";
 export const projects = [
   {
     src: portfolio,
@@ -29,6 +30,18 @@ export const projects = [
     buttons: {
       github: "https://github.com/cubes-ui/cubes-router",
       live: "https://www.npmjs.com/package/cubes-ui",
+    },
+  },
+];
+export const smallProjects = [
+  {
+    src: smallOne,
+    languages: ["js", "ts", "react"],
+    title: "pixel",
+    description: "a little dino",
+    buttons: {
+      github: "https://github.com/AZCPCF/pixel",
+      live: "https://pixel-kohl.vercel.app/",
     },
   },
 ];

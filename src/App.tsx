@@ -1,15 +1,17 @@
 import Layout from "./components/layout";
+import AboutMe from "./pages/about-me";
+import Contacts from "./pages/contacts";
 import Home from "./pages/home";
+import Projects from "./pages/projects";
 import { Router } from "./router";
 import { Route } from "./router/router.type";
-const About = () => <h2>About Page</h2>;
-const Contact = () => <h2>Contact Page</h2>;
 
 const App = () => {
   const routes: Route[] = [
     { path: "/", component: Home },
-    { path: "/about", component: About },
-    { path: "/contact", component: Contact },
+    { path: "/about-me", component: AboutMe },
+    { path: "/contacts", component: Contacts },
+    { path: "/works", component: Projects },
   ];
 
   return (

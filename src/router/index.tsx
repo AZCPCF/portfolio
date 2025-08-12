@@ -1,9 +1,11 @@
-import { FC, ReactNode, useEffect, useState } from "react";
+import { useGlobalState } from "cubes-ui";
+import { FC, ReactNode, useEffect } from "react";
 import { RouterProps } from "./router.type";
-
 export const Router: FC<RouterProps> = ({ routes }) => {
-  const [currentPath, setCurrentPath] = useState(window.location.pathname);
-
+  const [currentPath, setCurrentPath] = useGlobalState(
+    "path",
+    window.location.pathname
+  );
   useEffect(() => {
     const onPopState = () => {
       setCurrentPath(window.location.pathname);
@@ -27,8 +29,8 @@ interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: ReactNode;
 }
 
-export const Link: FC<LinkProps> = ({ to, children, ...props }) => {
-  const onClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+export const Link: FC<LinkProps> = ({ to, onClick, children, ...props }) => {
+  const onClickF = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     window.history.pushState(null, "", to);
     const navEvent = new PopStateEvent("popstate");
@@ -36,7 +38,16 @@ export const Link: FC<LinkProps> = ({ to, children, ...props }) => {
   };
 
   return (
-    <a href={to} onClick={onClick} {...props}>
+    <a
+      href={to}
+      {...props}
+      onClick={(e) => {
+        onClickF(e);
+        if (onClick) {
+          onClick(e);
+        }
+      }}
+    >
       {children}
     </a>
   );

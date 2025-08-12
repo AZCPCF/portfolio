@@ -2,17 +2,18 @@ import { Typography } from "cubes-ui";
 import { Copyright, Figma, Github } from "lucide-react";
 import Logo from "../../../assets/logo";
 import Telegram from "../../../assets/telegram";
+import { Link } from "../../../router";
 
 export default function Footer() {
   return (
     <footer className="border-t-2 border-gray-200 py-10">
       <div className="flex  justify-between max-sm:flex-wrap">
         <div className="flex flex-col gap-8 max-sm:w-full">
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <Logo />
             <h5>AZCPCF</h5>
             <h6 className="text-gray-400 pl-4">99.a.cpcf.r.99@gmail.com</h6>
-          </div>
+          </Link>
           <Typography variant="h6">
             Web designer and front-end developer
           </Typography>
