@@ -8,7 +8,7 @@ export default function HomeQuote() {
         author="Adolf Hitler, Mein Kampf"
         className="border-gray-500 border rounded-none lg:max-w-4xl m-auto -z-10"
       >
-        <Typography variant="span" className="max-md:text-lg">
+        <Typography variant="span" className="max-md:text-lg text-xl">
           The grossly impudent lie always leaves traces behind it, even after it
           has been nailed down.
         </Typography>
