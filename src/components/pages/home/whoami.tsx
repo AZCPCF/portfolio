@@ -1,5 +1,5 @@
 import { Button, Image, Typography, useModal } from "cubes-ui";
-import image from "../../../assets/image.png";
+import image from "../../../assets/logo.svg";
 import HomeForm from "./form";
 export default function HomeWhoAmI() {
   const { Modal, openModal, closeModal } = useModal();

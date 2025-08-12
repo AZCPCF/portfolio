@@ -10,7 +10,7 @@ export default function Title({
 }) {
   return (
     <div className={cn("flex items-center gap-8",className)}>
-      <Typography variant="h2">
+      <Typography variant="h2" className="text-nowrap">
         <span className="!text-primary-600">#</span>
         {children}
         <div className="w-0 group-hover:w-full h-[1px] bg-white transition-all duration-300 ease-in-out"></div>
