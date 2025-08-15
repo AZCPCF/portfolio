@@ -1,6 +1,7 @@
 import portfolio from "../assets/projects/portfolio.png";
 import cubesUi from "../assets/projects/cubes-ui.png";
 import smallOne from "../assets/projects/small-one.png";
+import rumi from "../assets/projects/rumi.png";
 export const projects = [
   {
     src: portfolio,
@@ -11,6 +12,12 @@ export const projects = [
       github: "https://github.com/AZCPCF/portfolio",
       live: "https://portfolio-azcpcf-apps.vercel.app",
     },
+  },
+  {
+    src:rumi,
+languages:["next","react","js","ts","tailwind"],title:"Rumi Reflection",
+description:"Explore the poetic legacy of Rumi and his timeless spiritual insights.",
+buttons:{github:https://github.com/AZCPCF/rumi",live:"https://rumi-one.vercel.app"}
   },
   {
     src: cubesUi,
