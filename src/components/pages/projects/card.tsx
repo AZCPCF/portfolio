@@ -15,7 +15,7 @@ export default function ProjectCard({
 }) {
   return (
     <div className="w-full border border-gray-500 hover:shadow-lg duration-200 hover:scale-105 h-max">
-      <Image src={src || ""} className="!aspect-video"/>
+      <Image src={src || ""} className="!aspect-video !rounded-none"/>
       <div className="border border-gray-500 flex flex-wrap p-2">
         {languages.map((item) => (
           <p className="px-1" key={crypto.randomUUID()}>
