@@ -9,7 +9,8 @@ export const projects = [
     title: "Portfolio",
     description: "You're using it rn",
     buttons: {
-      github: "https://github.com/AZCPCF/portfolio",
+      github:
+"https://github.com/AZCPCF/portfolio",
       live: "https://portfolio-azcpcf-apps.vercel.app",
     },
   },
@@ -17,7 +18,7 @@ export const projects = [
     src:rumi,
 languages:["next","react","js","ts","tailwind"],title:"Rumi Reflection",
 description:"Explore the poetic legacy of Rumi and his timeless spiritual insights.",
-buttons:{github:https://github.com/AZCPCF/rumi",live:"https://rumi-one.vercel.app"}
+buttons:{github:"https://github.com/AZCPCF/rumi",live:"https://rumi-one.vercel.app"}
   },
   {
     src: cubesUi,
