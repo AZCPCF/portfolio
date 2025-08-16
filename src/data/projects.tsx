@@ -15,12 +15,6 @@ export const projects = [
     },
   },
   {
-    src:rumi,
-languages:["next","react","js","ts","tailwind"],title:"Rumi Reflection",
-description:"Explore the poetic legacy of Rumi and his timeless spiritual insights.",
-buttons:{github:"https://github.com/AZCPCF/rumi",live:"https://rumi-one.vercel.app"}
-  },
-  {
     src: cubesUi,
     languages: ["js", "ts", "react", "tailwind"],
     title: "Cubes UI",
@@ -39,6 +33,11 @@ buttons:{github:"https://github.com/AZCPCF/rumi",live:"https://rumi-one.vercel.a
       github: "https://github.com/cubes-ui/cubes-router",
       live: "https://www.npmjs.com/package/cubes-ui",
     },
+  }, {
+    src:rumi,
+languages:["next","react","js","ts","tailwind"],title:"Rumi Reflection",
+description:"Explore the poetic legacy of Rumi and his timeless spiritual insights.",
+buttons:{github:"https://github.com/AZCPCF/rumi",live:"https://rumi-one.vercel.app"}
   },
 ];
 export const smallProjects = [
